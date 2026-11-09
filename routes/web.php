@@ -6,7 +6,7 @@ Route::inertia('/', 'home')->name('home');
 Route::inertia('/checkout', 'checkout')->name('checkout');
 Route::inertia('/store', 'store')->name('store');
 Route::inertia('/wishlist', 'wishlist')->name('wishlist');
-
+Route::inertia('/account', 'account')->name('account');
 
 
 
