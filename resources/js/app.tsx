@@ -12,14 +12,15 @@ void createInertiaApp({
     title: (title) => (title ? `${title} - ${appName}` : appName),
     layout: (name) => {
         switch (true) {
-            case name === 'welcome':
-                return null;
             case name.startsWith('auth/'):
                 return AuthLayout;
             case name.startsWith('settings/'):
                 return [AppLayout, SettingsLayout];
-            default:
+            case name === 'dashboard':
                 return AppLayout;
+            // Your own pages (home, checkout, store, ...) get no wrapper
+            default:
+                return null;
         }
     },
     strictMode: true,

@@ -13,37 +13,10 @@
 <body class="min-h-screen flex flex-col bg-[#3d0fba] text-white">
 
   <!-- HEADER -->
-  <header class="max-w-7xl w-full mx-auto px-6 py-4 flex items-center gap-8">
-    <a href="/" class="shrink-0">
-      <img src="{{ asset('images/lootkey-logo.svg') }}" alt="Lootkey" class="h-12">
-    </a>
 
-    <form action="#" class="flex-1 flex items-center gap-3 border border-white/60 px-4 py-2.5">
-      <span class="material-symbols-outlined">search</span>
-      <input type="search" name="q" placeholder="Search games, add-ons and more" class="flex-1 bg-transparent outline-none placeholder-white/60">
-    </form>
-
-    <div class="flex items-center gap-5">
-      <a href="#" class="hover:text-[#00FA9A]"><span class="material-symbols-outlined">favorite</span></a>
-      <a href="#" class="hover:text-[#00FA9A]"><span class="material-symbols-outlined">shopping_cart</span></a>
-      <div class="flex items-center gap-2 text-sm">
-        <a href="#" class="flex items-center gap-1 hover:text-[#00FA9A]"><span class="material-symbols-outlined">person</span>Log in</a>
-        <span class="text-white/40">|</span>
-        <a href="#" class="hover:text-[#00FA9A]">Sign up</a>
-      </div>
-    </div>
-  </header>
 
   <!-- NAV -->
-  <nav class="bg-[#350da1]">
-    <ul class="max-w-7xl mx-auto px-6 h-12 flex items-center gap-6 text-sm overflow-x-auto whitespace-nowrap">
-      <li><button class="flex items-center gap-2 hover:text-[#00FA9A]"><span class="material-symbols-outlined">menu</span>Categories</button></li>
-      <li><a href="#" class="hover:text-[#00FA9A]">Cheap games</a></li>
-      <li><a href="#" class="hover:text-[#00FA9A]">Software</a></li>
-      <li><a href="#" class="hover:text-[#00FA9A]">E-cards</a></li>
-      <li><a href="#" class="hover:text-[#00FA9A]">Lootkey top-ups</a></li>
-    </ul>
-  </nav>
+  
 
   <main class="max-w-7xl w-full mx-auto px-6 pb-16">
 
@@ -60,12 +33,12 @@
             Product type <i class="ti ti-chevron-up group-open:rotate-0 rotate-180 transition"></i>
           </summary>
           <div class="mt-3">
-          <div class="flex items-center gap-2 border border-white/30 bg-[#2a0a85] px-2 py-1.5 mb-3">
-            <input type="text" class="w-full bg-transparent text-sm outline-none">
-            <i class="ti ti-search text-white/60"></i>
-          </div>
+            <div class="flex items-center gap-2 border border-white/30 bg-[#2a0a85] px-2 py-1.5 mb-3">
+              <input type="text" class="w-full bg-transparent text-sm outline-none">
+              <i class="ti ti-search text-white/60"></i>
+            </div>
             <!--will appear when a type of the favorite is favorited
-          <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-2">
             <label class="flex items-center gap-2 text-sm cursor-pointer hover:text-[#00FA9A]">
               <input type="checkbox" class="size-4 accent-[#00FA9A]">
               <span class="grow">Game</span>
