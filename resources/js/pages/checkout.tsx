@@ -3,7 +3,7 @@ import Cart from "@/components/checkout/Cart";
 import CheckoutNotLoggedIn from "@/components/checkout/CheckoutNotLoggedIn";
 import CheckoutLoggedIn from "@/components/checkout/CheckoutLoggedIn";
 import InspiredPicks from "@/components/checkout/InspiredPicks";
-import Footer from "@/components/LayoutAll/Footer";
+import Footer from "@/components/layoutall/Footer";
 export default function Checkout() {
     return (
         <div className="min-h-screen flex flex-col bg-[#3d0fba] text-white">

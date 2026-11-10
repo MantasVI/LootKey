@@ -1,6 +1,6 @@
-import Footer from "@/components/LayoutAll/Footer";
-import Header from "@/components/LayoutAll/Header";
-import Navigation from "@/components/LayoutAll/Navigation";
+import Footer from "@/components/layoutall/Footer";
+import Header from "@/components/layoutall/Header";
+import Navigation from "@/components/layoutall/Navigation";
 import Store from "@/components/store/Store";
 
 export default function StorePage() {

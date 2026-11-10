@@ -8,7 +8,7 @@ Route::inertia('/store', 'store')->name('store');
 Route::inertia('/wishlist', 'wishlist')->name('wishlist');
 Route::inertia('/account', 'account')->name('account');
 
-
+Route::inertia('/login-history', 'login-log')->name('login-log');
 
 
 Route::middleware(['auth', 'verified'])->group(function () {

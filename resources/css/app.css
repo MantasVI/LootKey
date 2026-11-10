@@ -1,17 +1,45 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
-@import 'tw-animate-css';
+@import "tw-animate-css";
 
 @source '../views';
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 
 @custom-variant dark (&:is(.dark *));
 
+@utility accountButtonHeader {
+    @apply border-[#3d0fba] text-[#3d0fba] hover:bg-[#3d0fba] uppercase text-sm;
+}
+@utility accountButtonText {
+    @apply border-[#3d0fba] border-1 p-3 text-[#3d0fba] hover:bg-gray-100 uppercase text-sm;
+}
+@utility accountMoneyColor {
+    @apply text-green-600 text-3xl;
+}
+@utility accountSmallText {
+    @apply text-sm text-gray-400;
+}
+@utility accountProfile {
+    @apply rounded-full p-6 bg-green-300;
+}
+@utility accountUsername {
+    @apply font-bold text-lg;
+}
+@utility paskyra {
+    @apply font-bold text-[#1F0A4E] uppercase text-sm;
+}
+@utility tableHeader {
+    @apply px-5 py-2  bg-purple-200 uppercase text-[#1F0A4E];
+}
+@utility tableValue {
+    @apply px-5 py-2   bg-white text-black;
+}
+
 @theme {
     --font-sans:
-        'Instrument Sans', ui-sans-serif, system-ui, sans-serif,
-        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-        'Noto Color Emoji';
+        "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
 
     --radius-lg: var(--radius);
     --radius-md: calc(var(--radius) - 2px);
