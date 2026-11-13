@@ -10,6 +10,7 @@ Route::inertia('/account', 'account')->name('account');
 
 Route::inertia('/login-history', 'login-log')->name('login-log');
 
+Route::inertia('/login', 'login')->name('login');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('dashboard', 'dashboard')->name('dashboard');

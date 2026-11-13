@@ -1,0 +1,16 @@
+services:
+    mysql:
+        image: "mysql:8.4"
+        restart: unless-stopped
+        ports:
+            - 3306:3306
+        environment:
+            MYSQL_ROOT_PASSWORD: "Lootkey"
+            MYSQL_DATABASE: "Lootkey"
+            MYSQL_USER: "Lootkey"
+            MYSQL_PASSWORD: "Lootkey"
+        volumes:
+            - "mysql-data:/var/lib/mysql"
+
+volumes:
+    mysql-data:
