@@ -1,6 +1,6 @@
-import Item from "../LayoutAll/Item";
-import ProductsCounter from "../LayoutAll/ProductsCounter";
-import Pagination from "../LayoutAll/Pagination";
+import Item from "../layout-all/Item";
+import ProductsCounter from "../layout-all/ProductsCounter";
+import Pagination from "../layout-all/Pagination";
 export default function WishlistProducts() {
     return (
         <>

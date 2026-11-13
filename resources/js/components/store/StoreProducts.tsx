@@ -1,6 +1,6 @@
-import Item from "../LayoutAll/Item";
-import Pagination from "../LayoutAll/Pagination";
-import ProductsCounter from "../LayoutAll/ProductsCounter";
+import Item from "../layout-all/Item";
+import Pagination from "../layout-all/Pagination";
+import ProductsCounter from "../layout-all/ProductsCounter";
 
 export default function StoreProducts() {
     return (
