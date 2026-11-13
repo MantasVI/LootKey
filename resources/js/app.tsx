@@ -8,7 +8,6 @@ import SettingsLayout from "@/layouts/settings/layout";
 import ShopLayout from "./layouts/shop-layout";
 import AccountLayout from "./layouts/account-layout";
 import CheckoutLayout from "./layouts/checkout-layout";
-import HomeLayout from "./layouts/home-layout";
 
 const appName = import.meta.env.VITE_APP_NAME || "Laravel";
 
@@ -31,7 +30,7 @@ void createInertiaApp({
             case name === "checkout":
                 return CheckoutLayout;
             case name === "home":
-                return HomeLayout;
+                return ShopLayout;
             default:
                 return null;
         }

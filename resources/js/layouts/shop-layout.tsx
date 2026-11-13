@@ -8,9 +8,9 @@ export default function ShopLayout({ children }: PropsWithChildren) {
         <div className="min-h-screen flex flex-col bg-[#3d0fba] text-white">
             <Header />
             <Navigation />
-            <main className="max-w-7xl flex-1 w-full mx-auto px-6 pb-16">
-                {children}
-            </main>
+
+            {children}
+
             <Footer />
         </div>
     );

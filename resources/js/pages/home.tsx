@@ -11,14 +11,16 @@ const games = [
 export default function home() {
     return (
         <>
-            <PlatformCarousel />
+            <main className="flex-1">
+                <PlatformCarousel />
 
-            <Section title="Recently viewed" games={games} />
-            <Section title="Recommended" games={games} />
-            <Section title="Most popular games" games={games} />
-            <Section title="Most popular gift cards" games={games} />
+                <Section title="Recently viewed" games={games} />
+                <Section title="Recommended" games={games} />
+                <Section title="Most popular games" games={games} />
+                <Section title="Most popular gift cards" games={games} />
 
-            <Categories />
+                <Categories />
+            </main>
         </>
     );
 }
