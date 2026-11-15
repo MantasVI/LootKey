@@ -13,7 +13,7 @@ type SectionProps = {
 
 export default function Section({ title, games }: SectionProps) {
     return (
-        <section className="mt-12">
+        <section className="mt-12 p-10 ">
             <div className="max-w-7xl mx-auto px-6">
                 <h2 className="text-3xl font-bold mb-6">{title}</h2>
 

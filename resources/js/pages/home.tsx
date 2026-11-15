@@ -1,6 +1,7 @@
 import PlatformCarousel from "@/components/home/PlatformCarousel";
 import Section from "@/components/home/Section";
 import Categories from "@/components/home/Categories";
+import SectionDark from "@/components/home/SectionDark";
 
 const games = [
     { id: 1, name: "Terraria", region: "Global", price: 4.99, cashback: 0.5 },
@@ -15,9 +16,9 @@ export default function home() {
                 <PlatformCarousel />
 
                 <Section title="Recently viewed" games={games} />
-                <Section title="Recommended" games={games} />
+                <SectionDark title="Most popular games" games={games} />
                 <Section title="Most popular games" games={games} />
-                <Section title="Most popular gift cards" games={games} />
+                <SectionDark title="Most popular gift cards" games={games} />
 
                 <Categories />
             </main>

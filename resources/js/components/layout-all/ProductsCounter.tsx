@@ -1,16 +1,38 @@
-export default function ProductsCounter() {
+import { router } from "@inertiajs/react";
+export default function ProductsCounter(props: {
+    count: number;
+    filters: {
+        type: string | null;
+        platform: string | null;
+        sort: string | null;
+    };
+}) {
     return (
         <div className="flex justify-between items-center mb-4 text-sm">
             <p>
-                Results found: <span className="font-bold">1000+</span>
+                Results found: <span className="font-bold">{props.count}</span>
             </p>
             <label className="flex items-center gap-2 font-bold">
                 <i className="ti ti-sort-descending"></i> Popularity:
-                <select className="bg-transparent text-[#00FA9A] font-bold outline-none cursor-pointer">
-                    <option className="text-black">Most popular</option>
-                    <option className="text-black">Price: low to high</option>
-                    <option className="text-black">Price: high to low</option>
-                    <option className="text-black">Newest</option>
+                <select
+                    value={props.filters.sort}
+                    onChange={(e) =>
+                        router.get("/store", {
+                            ...props.filters,
+                            sort: e.target.value,
+                        })
+                    }
+                    className="bg-transparent text-[#00FA9A] font-bold outline-none cursor-pointer"
+                >
+                    <option value="price_asc" className="text-black">
+                        Price: low to high
+                    </option>
+                    <option value="price_desc" className="text-black">
+                        Price: high to low
+                    </option>
+                    <option value="newest" className="text-black">
+                        Newest
+                    </option>
                 </select>
             </label>
         </div>
