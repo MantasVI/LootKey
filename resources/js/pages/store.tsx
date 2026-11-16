@@ -1,11 +1,12 @@
 import Store from "@/components/store/Store";
-import type { Paginated } from "@/types/product";
-import type { Product } from "@/types/product";
-import type { Fil}
+import type { Paginated, Product, StoreFilters } from "@/types/product";
+
 export default function StorePage({
     products,
+    filters,
 }: {
     products: Paginated<Product>;
+    filters: StoreFilters;
 }) {
     return (
         <>
@@ -13,7 +14,7 @@ export default function StorePage({
                 <h1 className="text-3xl font-bold my-8">
                     Games, Gift Cards, Top-Ups &amp; More | Best Deals
                 </h1>
-                <Store products={products} />
+                <Store products={products} filters={filters} />
             </main>
         </>
     );

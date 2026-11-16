@@ -1,5 +1,7 @@
 import { router } from "@inertiajs/react";
-{
+import type { ProductsCounterProps } from "@/types/product";
+
+export default function ProductsCounter(props: ProductsCounterProps) {
     return (
         <div className="flex justify-between items-center mb-4 text-sm">
             <p>

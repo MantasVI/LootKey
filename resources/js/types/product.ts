@@ -24,11 +24,13 @@ export type Paginated<Product> = {
     links: LinkUrl[];
 };
 
-export type ProductsCounter {
+export type StoreFilters = {
+    type: string | null;
+    platform: string | null;
+    sort: string | null;
+};
+
+export type ProductsCounterProps = {
     count: number;
-    filters: {
-        type: string | null;
-        platform: string | null;
-        sort: string | null;
-    };
+    filters: StoreFilters;
 };

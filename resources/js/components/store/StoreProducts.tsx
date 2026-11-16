@@ -1,13 +1,14 @@
 import Item from "../layout-all/Item";
 import Pagination from "../layout-all/Pagination";
 import ProductsCounter from "../layout-all/ProductsCounter";
-import type { Product } from "@/types/product";
-import type { Paginated } from "@/types/product";
+import type { Paginated, Product, StoreFilters } from "@/types/product";
 
 export default function StoreProducts({
     products,
+    filters,
 }: {
     products: Paginated<Product>;
+    filters: StoreFilters;
 }) {
     return (
         <>
