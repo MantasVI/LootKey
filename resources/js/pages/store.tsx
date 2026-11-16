@@ -1,6 +1,7 @@
 import Store from "@/components/store/Store";
 import type { Paginated } from "@/types/product";
 import type { Product } from "@/types/product";
+import type { Fil}
 export default function StorePage({
     products,
 }: {

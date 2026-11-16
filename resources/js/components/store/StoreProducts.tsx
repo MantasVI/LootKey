@@ -12,7 +12,7 @@ export default function StoreProducts({
     return (
         <>
             <section>
-                <ProductsCounter count={products.total} />
+                <ProductsCounter count={products.total} filters={filters} />
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     {products.data.map((product) => (
                         <Item key={product.id} {...product} />

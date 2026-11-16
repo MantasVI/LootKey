@@ -1,12 +1,5 @@
 import { router } from "@inertiajs/react";
-export default function ProductsCounter(props: {
-    count: number;
-    filters: {
-        type: string | null;
-        platform: string | null;
-        sort: string | null;
-    };
-}) {
+{
     return (
         <div className="flex justify-between items-center mb-4 text-sm">
             <p>
@@ -15,7 +8,7 @@ export default function ProductsCounter(props: {
             <label className="flex items-center gap-2 font-bold">
                 <i className="ti ti-sort-descending"></i> Popularity:
                 <select
-                    value={props.filters.sort}
+                    value={props.filters.sort ?? ""}
                     onChange={(e) =>
                         router.get("/store", {
                             ...props.filters,

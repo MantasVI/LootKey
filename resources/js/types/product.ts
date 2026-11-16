@@ -23,3 +23,12 @@ export type Paginated<Product> = {
     next_page_url: string;
     links: LinkUrl[];
 };
+
+export type ProductsCounter {
+    count: number;
+    filters: {
+        type: string | null;
+        platform: string | null;
+        sort: string | null;
+    };
+};
